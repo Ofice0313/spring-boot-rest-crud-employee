@@ -95,4 +95,17 @@ public class EmployeeController {
 
         return objectMapper.convertValue(employeeNode, Employee.class);
     }
+
+    // add mapping for DELETE /employees/{employeeId} - delete employee
+    @DeleteMapping("/employees/{employeeId}")
+    public String deleteEmployee(@PathVariable int employeeId) {
+        Employee tempEmployee = employeeService.findById(employeeId);
+
+        // throw exception if null
+        if(tempEmployee == null) {
+            throw new RuntimeException("employee id not found -> " + employeeId);
+        }
+        employeeService.deleteById(employeeId);
+        return "Deleted employee id - " + employeeId;
+    }
 }
