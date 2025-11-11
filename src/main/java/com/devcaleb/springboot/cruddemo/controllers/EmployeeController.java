@@ -1,6 +1,5 @@
 package com.devcaleb.springboot.cruddemo.controllers;
 
-import com.devcaleb.springboot.cruddemo.dao.EmployeeDAO;
 import com.devcaleb.springboot.cruddemo.entities.Employee;
 import com.devcaleb.springboot.cruddemo.services.EmployeeService;
 import com.fasterxml.jackson.databind.ObjectMapper;
