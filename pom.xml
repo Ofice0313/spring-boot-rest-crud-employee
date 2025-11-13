@@ -37,6 +37,12 @@
 			<version>2.8.6</version>
 		</dependency>
 
+		<!-- Add dependency for spring boot security-->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-security</artifactId>
+		</dependency>
+
 		<!-- Add dependency for spring Data REST-->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
